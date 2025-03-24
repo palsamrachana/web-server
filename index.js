@@ -45,7 +45,7 @@ app.delete('/product/:id',async (req,res)=>{
     res.send('Product Deleted successfully')
 });
 
-app.listen(3000,'localhost',()=>{
+app.listen(process.env.PORT,'localhost',()=>{
     console.log('Server is started on port 3000');
 });
 
